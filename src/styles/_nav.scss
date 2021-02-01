@@ -5,14 +5,12 @@
   right: 2%;
   top: 50%;
   transform: translateY(-50%);
-  cursor: pointer;
+  
   z-index: 10000;
 
     @media screen and (max-width:$bp-md) {
       display: none;
     }
-
-
 
   &__link{
     position: relative;
@@ -23,6 +21,7 @@
     background-color:$grey-color;
     border-radius: 50%;
     display: flex;
+    cursor: pointer;
     align-items: center;
     transition: all .3s;
 
@@ -31,16 +30,14 @@
         background-color: $main-color;
       }
   
-    &__a,
-    &__a:link{
+    &__a{
       color: transparent;
       text-decoration: none;
       background-color: rgba(255, 0, 0, 0);
       position: absolute;
       z-index: 30;
       transform-origin: right;
-      transform: translate(-75%,-140%);
-      
+      transform: translate( -75%);  
       font-size: 2rem;
       font-weight: 700;
       width: 10rem;
@@ -53,13 +50,11 @@
       transition: transform cubic-bezier(0.44, 0.87, 0.83, 1.00) .3s,
       width cubic-bezier(.04,.43,.76,.93) .1s ;
 
-
       &:hover{
         color: $white-color;
         background-color:$main-color;
         width: 20rem;
       }
-    
     
     }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Home, Suitcase } from './Svgs'
+import { Home, Portfolio, User, Envelope, Blog } from './Svgs'
 
 
 
@@ -10,19 +10,41 @@ class Nav extends React.Component {
   render() {
     return (
       <nav className="mynav">
-        <a className="mynav__link" href="">
+
+        <a className="mynav__link" href="/">
           <i className='mynav__icon'>
             <Home />
           </i>
-          <a class="mynav__link__a" href="/">Home</a>
-        </a>
-        <a className="mynav__link" href="">
-          <i className='mynav__icon'>
-            <Suitcase />
-          </i>
-          <a class="mynav__link__a" href="/portfolio">Portfo</a>
+          <span className="mynav__link__a" >Home</span>
         </a>
 
+        <a className="mynav__link" href="">
+          <i className='mynav__icon'>
+            <Portfolio />
+          </i>
+          <span className="mynav__link__a" >Portfolio</span>
+        </a>
+
+        <a className="mynav__link" href="">
+          <i className='mynav__icon'>
+            <User />
+          </i>
+          <span className="mynav__link__a" >About-me</span>
+        </a>
+
+        <a className="mynav__link" href="">
+          <i className='mynav__icon'>
+            <Envelope />
+          </i>
+          <span className="mynav__link__a" >Contact</span>
+        </a>
+
+        <a className="mynav__link" href="">
+          <i className='mynav__icon'>
+            <Blog />
+          </i>
+          <span className="mynav__link__a" >Blog</span>
+        </a>
 
       </nav>
     )
