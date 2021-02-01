@@ -24,12 +24,11 @@
     cursor: pointer;
     align-items: center;
     transition: all .3s;
-
       &:hover,
       &:active{
         background-color: $main-color;
       }
-  
+ 
     &__a{
       color: transparent;
       text-decoration: none;
@@ -40,7 +39,7 @@
       transform: translate( -75%);  
       font-size: 2rem;
       font-weight: 700;
-      width: 10rem;
+      width: 0;
       height: 5rem;
       border-radius: 5rem;
       display: flex;
@@ -49,13 +48,12 @@
       text-transform: uppercase;
       transition: transform cubic-bezier(0.44, 0.87, 0.83, 1.00) .3s,
       width cubic-bezier(.04,.43,.76,.93) .1s ;
+    }
 
-      &:hover{
-        color: $white-color;
+    &:hover &__a{
+      color: $white-color;
         background-color:$main-color;
         width: 20rem;
-      }
-    
     }
 
   }  
@@ -71,8 +69,3 @@
 
 }
 
-.mynav__link:hover + .mynav__link__a {
-  color: $white-color;
-  width: 20rem;
-  background-color:$main-color;
-}
