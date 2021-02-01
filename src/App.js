@@ -1,5 +1,5 @@
 import React from 'react'
-import "app.scss"
+import "./styles/application.scss"
 const App = () => (
   <div>
     <h1>Hello react    </h1>

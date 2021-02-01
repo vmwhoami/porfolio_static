@@ -1,0 +1,46 @@
+// @import "~bootstrap/scss/bootstrap";
+
+@import 'variables';
+@import  'home','btn','nav','heading','social','form','portfolio','humburgernav','login_register','github_live';
+
+
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing:inherit;
+
+}
+
+html{
+ font-size: 62.5%;
+
+ @media screen and (max-width:$bp-small) {
+  font-size: 60%;
+}
+}
+
+a,
+a:hover{
+  text-decoration: none !important;
+}
+ul{
+  list-style: none;
+}
+
+body{
+  background-color: $black-color !important;
+}
+
+.container-f{
+  margin: 0!important;
+  padding: 0 !important;
+  color: $white-color;
+  font-weight: 400 !important;
+  font-size: 1.6rem !important;
+  font-family: $open-sans !important;
+
+ }
+
