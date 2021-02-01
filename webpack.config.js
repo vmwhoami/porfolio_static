@@ -24,8 +24,8 @@ module.exports = {
         loader: require.resolve("babel-loader"),
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        test: /\.(scss|css)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.png|svg|jpg|gif$/,
