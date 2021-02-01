@@ -1,29 +1,25 @@
 @import 'variables';
 
-.links{
+.links {
   margin-top: 2rem;
 
-  &__container{
+  &__container {
     background-color: $main-color;
     padding: 1rem 2rem;
     border-radius: 1rem;
     margin-right: 1rem;
   }
 
-  &__text{
-  font-size: 1.6rem;
-  color: $white-color;
+  &__text {
+    font-size: 1.6rem;
+    color: $white-color;
   }
 
-
-  &__icon{
-
-    svg{
+  &__icon {
+    svg {
       margin-left: 1rem;
       width: 2rem;
       height: 2rem;
     }
   }
-
- 
 }

@@ -2,39 +2,39 @@
 
 .mybutton,
 .mybutton:focus,
-.mybutton:active{
+.mybutton:active {
   display: inline-block;
   text-transform: uppercase;
   position: relative;
   font-size: 1.6rem;
-  background-color:  $main-color; // color variable
+  background-color: $main-color; // color variable
   color: $white-color;
   font-weight: 600;
   letter-spacing: 1px;
   width: 20rem;
-  height:5rem ;
+  height: 5rem;
   border: none;
   outline: none;
   border-radius: 2.5rem;
-  transition: all .3s;
-  
+  transition: all 0.3s;
 
-  &:hover{
+
+  &:hover {
     color: $white-color;
     text-decoration: none;
   }
 }
-.mybutton{
 
-  &__span{
+.mybutton {
+  &__span {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    transition: all cubic-bezier(0.44, 0.87, 0.83, 1.04) .3s;
+    transform: translate(-50%, -50%);
+    transition: all cubic-bezier(0.44, 0.87, 0.83, 1.04) 0.3s;
   }
 
-  &__icon{
+  &__icon {
     width: 3rem;
     height: 3rem;
     opacity: 0;
@@ -42,25 +42,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    transition: all cubic-bezier(0.44, 0.87, 0.83, 1.00) .3s;
-
+    transform: translate(-50%, -50%);
+    transition: all cubic-bezier(0.44, 0.87, 0.83, 1) 0.3s;
   }
-  &__svg{
+
+  &__svg {
     width: 2.5rem;
     height: 2.5rem;
   }
-  &:hover &__icon{
-    transform: translate(160%,-50%);
+
+  &:hover &__icon {
+    transform: translate(160%, -50%);
     opacity: 1;
   }
 
-  &:hover &__span{
-  transform: translate(-60%,-50%);
+  &:hover &__span {
+    transform: translate(-60%, -50%);
   }
 }
-
-
- 

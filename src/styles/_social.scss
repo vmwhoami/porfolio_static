@@ -1,26 +1,27 @@
 
 @import 'variables';
-.social{
+
+.social {
   margin-top: 2rem;
   display: flex;
 
-  &__link{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 5rem;
-      height: 5rem;
-      margin: 1rem;
-      background-color: $grey-color;
-      border-radius: 50%;
-      transition: all .3s;
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    background-color: $grey-color;
+    border-radius: 50%;
+    transition: all 0.3s;
 
-      &:hover{
-        background-color: $main-color;
-      }
+    &:hover {
+      background-color: $main-color;
     }
+  }
 
-  &__icon{
+  &__icon {
     width: 2.5rem;
     height: 2.5rem;
     display: flex;
@@ -28,7 +29,7 @@
     align-items: center;
   }
 
-  &__svg{
+  &__svg {
     width: 2.5rem;
     height: 2.5rem;
   }

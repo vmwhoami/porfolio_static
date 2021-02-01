@@ -1,7 +1,8 @@
 @import 'variables';
+
 /* Form */
-  .contact_form input[type=text],
-  .contact_form input[type=email] {
+.contact_form input[type=text],
+.contact_form input[type=email] {
   border: 1px solid $black-color;
   width: 100%;
   background: $grey-color;
@@ -10,13 +11,13 @@
   margin-bottom: 3rem;
   border-radius: 2rem;
   outline: none !important;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-  .contact_form textarea {
+.contact_form textarea {
   border: 1px solid $black-color;
   background: $grey-color;
-  color:$white-color;
+  color: $white-color;
   width: 100%;
   padding: 1rem 2.5rem;
   margin-bottom: 2rem;
@@ -24,14 +25,14 @@
   overflow: hidden;
   border-radius: 2rem;
   outline: none !important;
-  transition: .3s;
+  transition: 0.3s;
 }
 
- .contact_form .form-message {
+.contact_form .form-message {
   margin: 2.5rem 0;
 }
 
- .contact_form .output_message {
+.contact_form .output_message {
   display: block;
   color: #fff;
   height: 4.5rem;
@@ -39,65 +40,62 @@
   border-radius: 2rem;
 }
 
-  .contact_form .output_message.success {
+.contact_form .output_message.success {
   background: #28a745;
 }
- .contact_form .output_message.success:before {
- 
+
+.contact_form .output_message.success::before {
   content: "\f14a";
   padding-right: 1rem;
 }
-  .contact_form .output_message.error {
+
+.contact_form .output_message.error {
   background: #dc3545;
 }
 
-  .contact_form .output_message.error:before {
- 
+.contact_form .output_message.error::before {
   content: "\f071";
   padding-right: 1rem;
 }
 
-.contact{
-
-  &__container{
+.contact {
+  &__container {
     margin-top: 8rem;
   }
 
-  &__title{
+  &__title {
     font-size: 2.5rem;
     font-weight: 700;
   }
 
- display: flex;
- align-items: center;
- margin-top: 2rem;
-&__icon{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
 
-  svg{
-    width: 5rem;
-    height: 5rem;
-    fill: $main-color;
+  &__icon {
+    svg {
+      width: 5rem;
+      height: 5rem;
+      fill: $main-color;
+    }
   }
-}
- 
-  &__details{
-  margin-left: 1rem;
- 
+
+  &__details {
+    margin-left: 1rem;
+
 
     & p:first-child {
       margin: 0;
- 
       text-transform: uppercase;
     }
-    & p:nth-child(2){
+
+    & p:nth-child(2) {
       margin: 0;
       font-size: 1.3rem;
-     
     }
   }
 
-  &__button{
-    
+  &__button {
     position: relative;
     font-size: 1.8rem;
     width: 30rem;
@@ -109,44 +107,43 @@
     border: none;
     padding: 2rem;
     border-radius: 5rem;
-    transition: all .3s; 
+    transition: all 0.3s;
 
-
-    span{
+    span {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
-      transition: all .3s; 
+      transform: translate(-50%, -50%);
+      transition: all 0.3s;
     }
-    i{
+
+    i {
       width: 3rem;
-        height: auto;
+      height: auto;
       position: absolute;
       top: 50%;
       right: 30%;
-      transform: translate(-50%,-50%);
-    
-     transition: all .3s; 
-      svg{
+      transform: translate(-50%, -50%);
+      transition: all 0.3s;
+
+      svg {
         width: 3rem;
         height: 3rem;
         display: none;
       }
-
     }
-    &:hover i{  
-     transform: translate(80%,-50%);
-    }
-    &:hover i svg{  
-       display: block;
-     }
-   
 
-    &:hover span{
-      transform: translate(-70%,-50%);
+    &:hover i {
+      transform: translate(80%, -50%);
+    }
+
+    &:hover i svg {
+      display: block;
+    }
+
+
+    &:hover span {
+      transform: translate(-70%, -50%);
     }
   }
-
- 
 }
