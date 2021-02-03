@@ -33,6 +33,14 @@ const Nav = () => {
         </i>
         <span className="mynav__link__a">Contact</span>
       </NavLink>
+
+      <NavLink className="mynav__link" to="/blog">
+        <i className="mynav__icon">
+          <User />
+        </i>
+        <span className="mynav__link__a">Blog</span>
+      </NavLink>
+
     </nav>
   );
 }
