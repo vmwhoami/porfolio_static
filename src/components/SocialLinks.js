@@ -16,6 +16,7 @@ const SocialLinks = () => {
             <Github />
           </i>
         </a>
+
         <a target="_blank" className="social__link" href="https://twitter.com/vmwhoami">
           <i className="social__icon">
             <Twitter />
