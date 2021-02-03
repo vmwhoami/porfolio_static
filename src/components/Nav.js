@@ -4,6 +4,7 @@ import { Home, Portfolio, User, Envelope, Blog } from './Svgs';
 const Nav = () => {
   return (
     <nav className="mynav">
+      {/* Home link */}
       <NavLink className="mynav__link" to="/">
         <i className="mynav__icon">
           <Home />
@@ -11,15 +12,28 @@ const Nav = () => {
         <span className="mynav__link__a">Home</span>
       </NavLink>
 
-      <NavLink className="mynav__link" to="/about">
+      {/* Portfolio link */}
+      <NavLink className="mynav__link" to="/portfolio">
         <i className="mynav__icon">
           <Portfolio />
         </i>
-        <span className="mynav__link__a">About</span>
+        <span className="mynav__link__a">Portfolio</span>
+      </NavLink>
+      {/* About me link */}
+      <NavLink className="mynav__link" to="/about">
+        <i className="mynav__icon">
+          <User />
+        </i>
+        <span className="mynav__link__a">About-me</span>
+      </NavLink>
 
+      <NavLink className="mynav__link" to="/contact">
+        <i className="mynav__icon">
+          <User />
+        </i>
+        <span className="mynav__link__a">Contact</span>
       </NavLink>
     </nav>
-
   );
 }
 
