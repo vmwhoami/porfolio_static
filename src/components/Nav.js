@@ -19,6 +19,7 @@ const Nav = () => {
         </i>
         <span className="mynav__link__a">Portfolio</span>
       </NavLink>
+
       {/* About me link */}
       <NavLink className="mynav__link" to="/about">
         <i className="mynav__icon">
@@ -27,16 +28,17 @@ const Nav = () => {
         <span className="mynav__link__a">About-me</span>
       </NavLink>
 
+      {/* Contact link */}
       <NavLink className="mynav__link" to="/contact">
         <i className="mynav__icon">
-          <User />
+          <Envelope />
         </i>
         <span className="mynav__link__a">Contact</span>
       </NavLink>
-
+      {/* Blog link */}
       <NavLink className="mynav__link" to="/blog">
         <i className="mynav__icon">
-          <User />
+          <Blog />
         </i>
         <span className="mynav__link__a">Blog</span>
       </NavLink>
@@ -47,49 +49,3 @@ const Nav = () => {
 
 export default Nav;
 
-// import React from 'react';
-
-
-
-// const Nav = () => (
-//   <nav className="mynav">
-
-//     <a to="/" className="mynav__link"  >
-//       <i className="mynav__icon">
-//         <Home />
-//       </i>
-//       <span className="mynav__link__a">Home</span>
-//     </a>
-
-//     <a className="mynav__link" href="">
-//       <i className="mynav__icon">
-//         <Portfolio />
-//       </i>
-//       <span className="mynav__link__a">Portfolio</span>
-//     </a>
-
-//     <a className="mynav__link" href="">
-//       <i className="mynav__icon">
-//         <User />
-//       </i>
-//       <span className="mynav__link__a">About-me</span>
-//     </a>
-
-//     <a className="mynav__link" href="">
-//       <i className="mynav__icon">
-//         <Envelope />
-//       </i>
-//       <span className="mynav__link__a">Contact</span>
-//     </a>
-
-//     <a className="mynav__link" href="">
-//       <i className="mynav__icon">
-//         <Blog />
-//       </i>
-//       <span className="mynav__link__a">Blog</span>
-//     </a>
-
-//   </nav>
-// );
-
-// export default Nav;

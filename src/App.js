@@ -1,13 +1,15 @@
 import React from 'react';
 import './styles/application.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
+import Nav from './components/Nav';
+import Mobilenav from './components/Mobilenav';
 import Home from './pages/home';
 import Portfolio from './pages/portfolio';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Blog from './pages/blog';
-import Nav from './components/Nav';
+
+
 
 
 const App = () => (
@@ -15,6 +17,7 @@ const App = () => (
   <BrowserRouter>
     <div className="container-f">
       <Nav />
+      <Mobilenav />
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/portfolio" component={Portfolio} />
