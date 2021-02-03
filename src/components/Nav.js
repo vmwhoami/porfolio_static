@@ -1,26 +1,33 @@
-
-
 import React from 'react';
-
 import { NavLink } from 'react-router-dom';
-
-const Navigation = () => {
+import { Home, Portfolio, User, Envelope, Blog } from './Svgs';
+const Nav = () => {
   return (
-    <div>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
+    <nav className="mynav">
+      <NavLink className="mynav__link" to="/">
+        <i className="mynav__icon">
+          <Home />
+        </i>
+        <span className="mynav__link__a">Home</span>
+      </NavLink>
 
-    </div>
+      <NavLink className="mynav__link" to="/about">
+        <i className="mynav__icon">
+          <Portfolio />
+        </i>
+        <span className="mynav__link__a">About</span>
+
+      </NavLink>
+    </nav>
+
   );
 }
 
-export default Navigation;
+export default Nav;
 
 // import React from 'react';
 
-// import {
-//   Home, Portfolio, User, Envelope, Blog,
-// } from './Svgs';
+
 
 // const Nav = () => (
 //   <nav className="mynav">
