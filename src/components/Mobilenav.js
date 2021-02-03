@@ -13,7 +13,7 @@ const Navigation = () => {
       <nav className="navigation__nav">
         <ul className="navigation__list">
 
-          <li class="navigation__item">
+          <li className="navigation__item">
             <NavLink className="navigation__itemlink" to="/">
               <i className="navigation__icon">
                 <Home />
@@ -22,7 +22,7 @@ const Navigation = () => {
             </NavLink>
           </li>
 
-          <li class="navigation__item">
+          <li className="navigation__item">
             <NavLink className="navigation__itemlink" to="/portfolio">
               <i className="navigation__icon">
                 <Portfolio />
@@ -32,7 +32,7 @@ const Navigation = () => {
           </li>
 
 
-          <li class="navigation__item">
+          <li className="navigation__item">
             <NavLink className="navigation__itemlink" to="/about">
               <i className="navigation__icon">
                 <User />
@@ -41,7 +41,7 @@ const Navigation = () => {
             </NavLink>
           </li>
 
-          <li class="navigation__item">
+          <li className="navigation__item">
             <NavLink className="navigation__itemlink" to="/contact">
               <i className="navigation__icon">
                 <Envelope />
@@ -51,7 +51,7 @@ const Navigation = () => {
           </li>
 
 
-          <li class="navigation__item">
+          <li className="navigation__item">
             <NavLink className="navigation__itemlink" to="/blog">
               <i className="navigation__icon">
                 <Blog />
