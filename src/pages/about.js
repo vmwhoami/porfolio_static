@@ -1,10 +1,10 @@
 import React from 'react';
-
+import Heading from '../components/Heading';
 const About = () => {
   return (
-    <div>
-      <h1>About US</h1>
-      <p>About US page body content</p>
+    <div class="container">
+      <Heading white="about" color="me" bg="resume"
+      />
     </div>
   );
 }

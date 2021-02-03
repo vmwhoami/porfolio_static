@@ -3,7 +3,10 @@ import Heading from '../components/Heading';
 
 const Portfolio = () => {
   return (
-    <Heading />
+    <div class="container">
+      <Heading white="My" color="Portfolio" bg="Work"
+      />
+    </div>
   );
 }
 

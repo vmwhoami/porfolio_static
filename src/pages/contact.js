@@ -1,10 +1,10 @@
 import React from 'react';
-
+import Heading from '../components/Heading';
 const Contact = () => {
   return (
-    <div>
-      <h1>Contact</h1>
-      <p>Contact page content</p>
+    <div class="container">
+      <Heading white="get in" color="touch" bg="contact"
+      />
     </div>
   );
 }

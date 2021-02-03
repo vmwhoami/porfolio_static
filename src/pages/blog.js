@@ -1,10 +1,11 @@
 import React from 'react';
+import Heading from '../components/Heading';
 
 const Blog = () => {
   return (
-    <div>
-      <h1>Blog US</h1>
-      <p>TThe bloging content</p>
+    <div class="container">
+      <Heading white="my" color="blog" bg="posts"
+      />
     </div>
   );
 }
