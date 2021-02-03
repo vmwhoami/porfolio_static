@@ -2,6 +2,8 @@ import React from 'react';
 import image from '../assets/portfolio.jpg'
 import { NavLink } from 'react-router-dom';
 import { Portfolio } from '../components/Svgs';
+import SocialLinks from '../components/SocialLinks'
+
 
 
 const Home = () => {
@@ -28,6 +30,7 @@ const Home = () => {
                 <Portfolio />
               </i>
             </NavLink>
+            <SocialLinks />
           </div>
         </div>
       </div>
