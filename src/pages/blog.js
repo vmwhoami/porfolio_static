@@ -3,7 +3,7 @@ import Heading from '../components/Heading';
 
 const Blog = () => {
   return (
-    <div class="container">
+    <div className="container">
       <Heading white="my" color="blog" bg="posts"
       />
     </div>
