@@ -21,12 +21,12 @@ const Nav = () => {
       </NavLink>
 
       {/* About me link */}
-      <NavLink className="mynav__link" to="/about">
+      {/* <NavLink className="mynav__link" to="/about">
         <i className="mynav__icon">
           <User />
         </i>
         <span className="mynav__link__a">About-me</span>
-      </NavLink>
+      </NavLink> */}
 
       {/* Contact link */}
       <NavLink className="mynav__link" to="/contact">
@@ -36,12 +36,12 @@ const Nav = () => {
         <span className="mynav__link__a">Contact</span>
       </NavLink>
       {/* Blog link */}
-      <NavLink className="mynav__link" to="/blog">
+      {/* <NavLink className="mynav__link" to="/blog">
         <i className="mynav__icon">
           <Blog />
         </i>
         <span className="mynav__link__a">Blog</span>
-      </NavLink>
+      </NavLink> */}
 
     </nav>
   );

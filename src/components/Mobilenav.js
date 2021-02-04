@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Home, Portfolio, User, Envelope, Blog } from './Svgs';
+
 const Navigation = () => {
-  const [toggled, setToggle] = useState(false)
+  let refContainer = useRef(null)
+
+  let changeTogle = () => {
+    refContainer.current.checked = false
+  }
+
+  let Checkobox = () => <input type="checkbox" className="navigation__checkbox" ref={refContainer} id="nav_toggle" />
   return (
     <div className="navigation">
-      <input type="checkbox" className="navigation__checkbox" id="nav_toggle" />
+      <Checkobox />
+      {/* <input type="checkbox" className="navigation__checkbox" id="nav_toggle" /> */}
       <label className="navigation__button" htmlFor="nav_toggle">
         <span className="navigation__burger"></span>
       </label>
@@ -14,7 +22,7 @@ const Navigation = () => {
         <ul className="navigation__list">
 
           <li className="navigation__item">
-            <NavLink className="navigation__itemlink" to="/">
+            <NavLink className="navigation__itemlink" onClick={() => changeTogle()} to="/">
               <i className="navigation__icon">
                 <Home />
               </i>
@@ -23,14 +31,14 @@ const Navigation = () => {
           </li>
 
           <li className="navigation__item">
-            <NavLink className="navigation__itemlink" to="/portfolio">
+            <NavLink className="navigation__itemlink" onClick={() => changeTogle()} to="/portfolio">
               <i className="navigation__icon">
                 <Portfolio />
               </i>
               <span className="navigation__item__span">Portfolio</span>
             </NavLink>
           </li>
-
+          {/* 
 
           <li className="navigation__item">
             <NavLink className="navigation__itemlink" to="/about">
@@ -39,10 +47,10 @@ const Navigation = () => {
               </i>
               <span className="navigation__item__span">About-me</span>
             </NavLink>
-          </li>
+          </li> */}
 
           <li className="navigation__item">
-            <NavLink className="navigation__itemlink" to="/contact">
+            <NavLink className="navigation__itemlink" onClick={() => changeTogle()} to="/contact">
               <i className="navigation__icon">
                 <Envelope />
               </i>
@@ -50,7 +58,7 @@ const Navigation = () => {
             </NavLink>
           </li>
 
-
+          {/* 
           <li className="navigation__item">
             <NavLink className="navigation__itemlink" to="/blog">
               <i className="navigation__icon">
@@ -58,12 +66,12 @@ const Navigation = () => {
               </i>
               <span className="navigation__item__span">blog</span>
             </NavLink>
-          </li>
+          </li> */}
 
 
         </ul>
       </nav>
-    </div>
+    </div >
   );
 }
 
