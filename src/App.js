@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios'
+
 import './styles/application.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav';
