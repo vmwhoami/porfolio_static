@@ -9,6 +9,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      favicon: "./src/assets/vmlogo.svg",
       template: './src/index.html',
     }),
   ],
