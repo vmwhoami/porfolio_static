@@ -1,5 +1,15 @@
 @import 'variables';
 
+.grid-container {
+  max-width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3rem;
+ 
+}
+
 .post_thumb {
   display: flex;
   border-radius: 1rem 1rem 0 0;
