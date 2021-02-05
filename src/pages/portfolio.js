@@ -47,12 +47,14 @@ const PostThumb = ({ id, thumb_image }) => {
 
 }
 
-const PostContent = ({ title, body }) => {
+const PostContent = ({ id, title, body }) => {
 
   return (
     <div className="post_content">
       <div className="entry_header">
-        <h3> <a className="text-decoration-none" >{title}</a> </h3>
+        <h3>
+          <Link to={`/portfolio/${id}`} className="text-decoration-none" >{title}</Link>
+        </h3>
       </div>
       <div className="entry_content">
         <p>{body} </p>
