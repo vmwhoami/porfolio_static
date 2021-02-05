@@ -10,22 +10,23 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Blog from './pages/blog';
 import Errorpage from './pages/errorpage';
+import PortfolioItem from './pages/portfolioItem'
 
 
 
 
 const App = () => (
-
   <BrowserRouter>
     <div className="container-f">
       <Nav />
       <Mobilenav />
       <Switch>
         <Route path="/" component={Home} exact />
-        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/portfolio" exact component={Portfolio} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/blog" component={Blog} />
+        <Route path="/portfolio/:id" children={<PortfolioItem />} />
         <Route path="*" component={Errorpage} />
       </Switch>
     </div>

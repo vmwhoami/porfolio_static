@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Heading from '../components/Heading';
+import { Link } from 'react-router-dom';
 import axios from 'axios'
 
 const Portfolio = () => {
-  const url = 'https://vmwhoamiportfolioapi.herokuapp.com/portfolio'
+  const url = 'https://vmportapi.herokuapp.com/portfolio'
   const [loading, setLoading] = useState(true);
   const [portitems, setPortimes] = useState([])
 
@@ -24,7 +25,7 @@ const Portfolio = () => {
         {portitems.map(({ id, title, body, subtitle, github_link, live_link, main_image, thumb_image }) => {
           return (
             <article key={id} className="post_container  ">
-              <PostThumb thumb_image={thumb_image} />
+              <PostThumb thumb_image={thumb_image} id={id} />
               <PostContent title={title} body={body} />
             </article>
           )
@@ -34,13 +35,13 @@ const Portfolio = () => {
   );
 }
 
-const PostThumb = ({ thumb_image }) => {
+const PostThumb = ({ id, thumb_image }) => {
 
   return (
     <div className="post_thumb ">
-      <a className="d-block position-relative overflow-hidden link_container" >
+      <Link to={`/portfolio/${id}`} className="link_container" >
         <img className="img_fluid" src={thumb_image} />
-      </a>
+      </Link>
     </div>
   )
 
