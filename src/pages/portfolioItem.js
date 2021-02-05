@@ -4,15 +4,15 @@ import axios from 'axios'
 
 import { Link, useParams } from 'react-router-dom';
 const PortfolioItem = () => {
-  let id = useParams();
-  console.log(id);
-  const url = `https://vmportapi.herokuapp.com/portfolio/`
+  let { id } = useParams();
+
+  const url = `https://vmportapi.herokuapp.com/portfolio/${id}`
   const [loading, setLoading] = useState(true);
   const [portitem, setPortItem] = useState([])
 
   const getPortItems = async () => {
-    const items = await axios.get(url)
-    setPortItem(items.data)
+    const item = await axios.get(url)
+    setPortItem(item.data)
   }
   useEffect(() => {
     getPortItems()
