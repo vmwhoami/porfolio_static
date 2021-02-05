@@ -9,7 +9,6 @@ const Portfolio = () => {
 
   const getPortItems = async () => {
     const items = await axios.get(url)
-
     setPortimes(items.data)
   }
   useEffect(() => {
