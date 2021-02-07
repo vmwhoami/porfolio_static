@@ -24,10 +24,25 @@ const PortfolioItem = () => {
     <div className="container">
       <Heading white={title} color="" bg="Portfolio"
       />
-      <ImageOfItem thumb_image={thumb_image} />
+      <div className="portItemCont">
+        <ImageOfItem thumb_image={thumb_image} />
+        <div className="content">
+          <em className="content__em">A simple website </em>
+          <p>Use semantic HTML tags.
+          Use CSS selectors correctly.
+          Use HTML elements box model (margin, padding, width, height).
+          Use industry-standard tools (flexbox) to place elements on the page.
+          Ability to create UIs adaptable to different screen sizes using media-queries.
+          Apply front-end best practices.
+          Ability to create UIs adjusted to given designs.
+          Strong English written and verbal communication.
+          Ability to communicate information effectively to technical and non-technical people.
+          Ability to translate business requirements into software solutions.
+          Ability to work well in a fast-paced environment under deadlines.
+Ability to perform tasks and complete projects with minimal supervision.</p>
+        </div>
 
-
-
+      </div>
     </div>
   );
 }

@@ -1,3 +1,12 @@
+.portItemCont{
+  max-width: 80vw;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  grid-gap: 2rem;
+}
+
+
 .imgcontainer{
 
 
@@ -5,5 +14,6 @@
   &__img{
     width: 100%;
     height: 100%;
+    object-fit: unset;
   }
 }
