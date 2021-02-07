@@ -19,21 +19,26 @@ const PortfolioItem = () => {
     getPortItems()
 
   }, [])
-
+  const { title, subtitle, body, main_image, thumb_image, github_link, live_link } = portitem
   return (
     <div className="container">
-      <Heading white={portitem.title} color="" bg="Portfolio"
+      <Heading white={title} color="" bg="Portfolio"
       />
+      <ImageOfItem thumb_image={thumb_image} />
 
-      <div className="imgcontainer">
-        <img className="imgcontainer__img" src={portitem.thumb_image} />
-      </div>
 
 
     </div>
   );
 }
 
+const ImageOfItem = ({ thumb_image }) => {
+  return (
+    <div className="imgcontainer">
+      <img className="imgcontainer__img " src={thumb_image} />
+    </div>
+  )
+}
 
 
 export default PortfolioItem;
@@ -41,10 +46,7 @@ export default PortfolioItem;
 
 {/* <div className="row mt-5">
 
-<div className="col-lg-6 col-md-12">
-  <img className="img-fluid" src="https://raw.githubusercontent.com/vmwhoami/Mastering_Grid/without-linter/img/full_desk_screenshot.jpg">
-</div>
-
+ 
 
 <div className=" col-12 col-lg-6  ">
   <em className=" my-5 ">A simple website </em>
