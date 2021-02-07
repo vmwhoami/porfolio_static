@@ -5,9 +5,12 @@
 
   &__container {
     background-color: $main-color;
+    display: inline-flex;
+    align-items: center;
     padding: 1rem 2rem;
     border-radius: 1rem;
     margin-right: 1rem;
+    cursor: pointer;
   }
 
   &__text {
