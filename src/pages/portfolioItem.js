@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Heading from '../components/Heading';
-import { Github, Earth } from '../components/Svgs'
+import { Github, Earth } from '../components/Svgs';
+import { NavLink } from 'react-router-dom';
+
 import axios from 'axios'
 
 import { Link, useParams } from 'react-router-dom';
@@ -28,20 +30,20 @@ const PortfolioItem = () => {
       <div className="portItemCont">
         <ImageOfItem thumb_image={main_image} />
         <div className="content">
-          <em className="content__em">{subtitle} </em>
+          <h3 className="content__h3">{subtitle} </h3>
           <p>{body}</p>
-          <h2>Technologies used</h2>
+          <h4>Technologies used</h4>
+          <hr className="white-line " />
+
           <hr className="white-line " />
           <div className="links">
-
-
             <LiveLinks github_link={github_link} Github={Github} />
             <LiveLinks live_link={live_link} Earth={Earth} />
-            <a target="_blank" className="links__container" href={live_link}>
+            <NavLink className="links__container" to="/portfolio">
               <span className="links__text">back to portfolios</span>
               <i className="links__icon">
               </i>
-            </a>
+            </NavLink>
           </div>
         </div>
 

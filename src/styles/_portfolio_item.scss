@@ -7,7 +7,6 @@
   grid-gap: 3rem;
 }
 
-
 .imgcontainer{
   &__img{
     max-width: 100%;
@@ -15,5 +14,18 @@
  
     display: block; 
     
+  }
+}
+
+
+.content{
+  padding: 2rem;
+
+  &__h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  p{
+    margin: 2rem 0;
   }
 }

@@ -2,14 +2,15 @@
 
 .links {
   margin-top: 2rem;
+  display: flex;
 
   &__container {
     background-color: $main-color;
     display: inline-flex;
     align-items: center;
+    margin: 5px;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    margin-right: 1rem;
     cursor: pointer;
   }
 
