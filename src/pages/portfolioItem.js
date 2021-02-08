@@ -32,8 +32,7 @@ const PortfolioItem = () => {
         <div className="content">
           <h3 className="content__h3">{subtitle} </h3>
           <p>{body}</p>
-          <h4>Technologies used</h4>
-          <hr className="white-line " />
+
 
           <hr className="white-line " />
           <div className="links">
