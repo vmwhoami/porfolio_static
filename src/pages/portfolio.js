@@ -26,7 +26,7 @@ const Portfolio = () => {
           return (
             <article key={id} className="post_container  ">
               <PostThumb thumb_image={thumb_image} id={id} />
-              <PostContent title={title} body={body} />
+              <PostContent title={title} body={body} id={id} />
             </article>
           )
         })}
@@ -53,11 +53,11 @@ const PostContent = ({ id, title, body }) => {
     <div className="post_content">
       <div className="entry_header">
         <h3>
-          <Link to={`/portfolio/${id}`} className="text-decoration-none" >{title}</Link>
+          <Link to={`/portfolio/${id}`} className="portfolio__heading" >{title}</Link>
         </h3>
       </div>
       <div className="entry_content">
-        <p>{body} </p>
+        <p >{body.split('.')[0] + '...'} </p>
       </div>
     </div>
   )
