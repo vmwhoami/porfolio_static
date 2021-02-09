@@ -41,6 +41,7 @@ const Contact = () => {
           <form className="contact_form" method="POST" name="contact" action="/contact" >
             <div className="contact__nes">
               <input type="hidden" name="form-name" value="contact" />
+
               <div className="contact__input">
                 <input required placeholder="YOUR NAME" type="text" name="name" id="contact_name" />
               </div>
@@ -48,6 +49,7 @@ const Contact = () => {
               <div className="contact__input">
                 <input required placeholder="YOUR EMAIL" type="email" name="email" id="contact_email" />
               </div>
+
               <div className="contact__input">
                 <input required placeholder="YOUR SUBJECT" type="text" name="subject" id="contact_subject" />
               </div>
@@ -77,48 +79,3 @@ const Contact = () => {
 export default Contact;
 
 
-
-
-//       <!-- Form Starts -->
-//       <div className="col-12 col-lg-8">
-//          <!--   Form St -->
-
-//          <form className="contact_form" action="/contact" accept-charset="UTF-8" data-remote="true" method="post"><input type="hidden" name="authenticity_token" value="n2zUJ7Ko8kqftPfbOchHLvnwfGzvSyvLkUpG0stq8Qk7UyXkr5AzE3q9QrXMhPbH3VOOY3m56D7hdCOi3mCK4g==">
-
-//          <div className="contact_form">
-//             <div className="row">
-//                <div className="col-12 col-md-4">
-//                   <input placeholder="YOUR NAME" type="text" name="contact[name]" id="contact_name">
-//                </div>
-//                <div className="col-12 col-md-4">
-//                   <input placeholder="YOUR EMAIL" type="text" name="contact[email]" id="contact_email">
-
-//                </div>
-//                <div className="col-12 col-md-4">
-//                   <input placeholder="YOUR SUBJECT" type="text" name="contact[subject]" id="contact_subject">
-
-//                </div>
-//                <div className="col-12">
-
-//                   <textarea placeholder="YOUR MESSAGE" name="contact[message]" id="contact_message"></textarea>
-
-//                   <button name="button" type="submit" className="contact__button">
-//                   <span>Send Message</span>
-//                   <i className="social__icon">
-//                      <svg>
-//                         <use xlink:href="#icon-paper-plane"></use>
-//                      </svg>
-//                   </i>
-// </button>
-//                </div>
-//                <div className="col-12 form-message">
-//                   <span className="output_message text-center font-weight-600 text-uppercase">
-
-//                   </span>
-//                </div>
-//             </div>
-//          </div>
-// </form>         <!--   Form End -->
-//       </div>
-//       <!-- Contact Form Ends -->
-//    </div>

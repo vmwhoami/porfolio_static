@@ -70,6 +70,9 @@
   margin:  5rem auto;
   display: flex;
 
+  @media screen and (max-width: $bp-md) {
+    flex-direction: column;
+  }
 
 
  &__left{
@@ -83,9 +86,20 @@ padding-right: 2rem;
  width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: $bp-md) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
 }
 &__input{
-  flex: 0 1 25rem
+  flex: 0 1 22rem;
+  
+  @media screen and (max-width: $bp-md) {
+    flex: 1 1 7rem ;
+  
+  }
 }
 
 &__message{
