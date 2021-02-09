@@ -38,7 +38,7 @@ const Contact = () => {
         </div>
         {/* START OF THE RIGHT SIDE */}
         <div className="contact__right">
-          <form className="contact_form" data-remote="true" method="post">
+          <form className="contact_form" method="POST" data-netlify="true" >
             <div className="contact__nes">
               <input placeholder="YOUR NAME" type="text" name="contact[name]" id="contact_name" />
 
