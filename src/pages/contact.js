@@ -9,31 +9,50 @@ const Contact = () => {
       <Heading white="get in" color="touch" bg="contact"
       />
 
-      <div className="row contact__container">
-        <h3 className="text-uppercase contact__title ">Don't be shy !</h3>
-        <p className="mb-3">Get in touch I am open to discuss new projects and ideas. </p>
+      <div className="contact">
+        <div className="contact__left">
+          <h3 className="text-uppercase contact__title ">Don't be shy !</h3>
+          <p className="mb-3">Get in touch I am open to discuss new projects and ideas. </p>
 
-        <div className="contact position-relative">
-          <i className="contact__icon">
-            <Envelope />
-          </i>
-          <div className="contact__details">
-            <p>mail me:</p>
-            <p>vmwhoami@gmail.com</p>
+          <div className="contact__info">
+            <i className="contact__icon">
+              <Envelope />
+            </i>
+            <div className="contact__details">
+              <p>mail me:</p>
+              <p>vmwhoami@gmail.com</p>
+            </div>
           </div>
+
+
+          <div className="contact__info">
+            <i className="contact__icon">
+              <Phone />
+            </i>
+            <div className="contact__details">
+              <p>call me:</p>
+              <p> +373 69442476</p>
+            </div>
+          </div>
+          <SocialLinks />
+        </div>
+        {/* START OF THE RIGHT SIDE */}
+        <div className="contact__right">
+          <form className="contact_form" accept-charset="UTF-8" data-remote="true" method="post">
+            <div className="contact__nes">
+              <input placeholder="YOUR NAME" type="text" name="contact[name]" id="contact_name" />
+
+              <input placeholder="YOUR EMAIL" type="text" name="contact[email]" id="contact_email" />
+
+              <input placeholder="YOUR SUBJECT" type="text" name="contact[subject]" id="contact_subject" />
+            </div>
+            <div className="contact__message">
+              <textarea placeholder="YOUR MESSAGE" name="contact[message]" id="contact_message"></textarea>
+            </div>
+          </form>
         </div>
 
 
-        <div className="contact position-relative">
-          <i className="contact__icon">
-            <Phone />
-          </i>
-          <div className="contact__details">
-            <p>call me:</p>
-            <p> +373 69442476</p>
-          </div>
-        </div>
-        <SocialLinks />
       </div>
     </div >
   );
@@ -44,7 +63,7 @@ export default Contact;
 
 
 
-//       <!-- Contact Form Starts -->
+//       <!-- Form Starts -->
 //       <div className="col-12 col-lg-8">
 //          <!--   Form St -->
 
