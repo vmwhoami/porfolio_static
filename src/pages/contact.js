@@ -38,7 +38,7 @@ const Contact = () => {
         </div>
         {/* START OF THE RIGHT SIDE */}
         <div className="contact__right">
-          <form className="contact_form" method="POST" data-netlify="true" >
+          <form className="contact_form" method="POST" name="contact" >
             <div className="contact__nes">
               <div className="contact__input">
                 <input placeholder="YOUR NAME" type="text" name="name" id="contact_name" />
@@ -63,7 +63,6 @@ const Contact = () => {
               <i className="social__icon">
                 <Plane />
               </i>
-
             </button>
           </form>
         </div>

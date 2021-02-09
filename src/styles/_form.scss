@@ -70,9 +70,6 @@
   margin:  5rem auto;
   display: flex;
 
-  &__input{
-    // margin: 1rem;
-  }
 
 
  &__left{
@@ -86,6 +83,9 @@ padding-right: 2rem;
  width: 100%;
   display: flex;
   justify-content: space-between;
+}
+&__input{
+  flex: 0 1 25rem
 }
 
 &__message{
