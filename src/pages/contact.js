@@ -40,17 +40,25 @@ const Contact = () => {
         <div className="contact__right">
           <form className="contact_form" method="POST" data-netlify="true" >
             <div className="contact__nes">
-              <input placeholder="YOUR NAME" type="text" name="contact[name]" id="contact_name" />
+              <div className="contact__input">
+                <input placeholder="YOUR NAME" type="text" name="name" id="contact_name" />
+              </div>
 
-              <input placeholder="YOUR EMAIL" type="text" name="contact[email]" id="contact_email" />
+              <div className="contact__input">
+                <input placeholder="YOUR EMAIL" type="text" name="email" id="contact_email" />
+              </div>
+              <div className="contact__input">
+                <input placeholder="YOUR SUBJECT" type="text" name="subject" id="contact_subject" />
+              </div>
 
-              <input placeholder="YOUR SUBJECT" type="text" name="contact[subject]" id="contact_subject" />
             </div>
+
             <div className="contact__message">
-              <textarea placeholder="YOUR MESSAGE" name="contact[message]" id="contact_message"></textarea>
+              <textarea placeholder="YOUR MESSAGE" name="message" id="contact_message"></textarea>
+            </div>
+            <div className="contact__input" data-netlify-recaptcha="true">
             </div>
             <button className="contact__button">
-
               <span  >SEND MESSAGE</span>
               <i className="social__icon">
                 <Plane />

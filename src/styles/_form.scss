@@ -12,8 +12,7 @@
   background: $grey-color;
   color: #fff;
   padding: 2rem 2.5rem;
-  margin: 1rem;
-
+ 
   border-radius: 2rem;
   outline: none !important;
   transition: 0.3s;
@@ -67,9 +66,14 @@
 }
 
 .contact {
-max-width: 80vw;
-margin:  10rem auto;
-display: flex;
+  max-width: 80vw;
+  margin:  5rem auto;
+  display: flex;
+
+  &__input{
+    // margin: 1rem;
+  }
+
 
  &__left{
 padding-right: 2rem;
@@ -79,16 +83,9 @@ padding-right: 2rem;
 }
 
 &__nes{
-width: 100%;
+ width: 100%;
   display: flex;
-
-  & > :first-child { 
-     margin-left: 0 !important; 
-    }
-
-    & > :last-child { 
-      margin-right: 0 !important; 
-     }
+  justify-content: space-between;
 }
 
 &__message{
