@@ -38,23 +38,24 @@ const Contact = () => {
         </div>
         {/* START OF THE RIGHT SIDE */}
         <div className="contact__right">
-          <form className="contact_form" method="POST" name="contact" >
+          <form className="contact_form" method="POST" name="contact" action="/contact" >
             <div className="contact__nes">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="contact__input">
-                <input placeholder="YOUR NAME" type="text" name="name" id="contact_name" />
+                <input required placeholder="YOUR NAME" type="text" name="name" id="contact_name" />
               </div>
 
               <div className="contact__input">
-                <input placeholder="YOUR EMAIL" type="text" name="email" id="contact_email" />
+                <input required placeholder="YOUR EMAIL" type="email" name="email" id="contact_email" />
               </div>
               <div className="contact__input">
-                <input placeholder="YOUR SUBJECT" type="text" name="subject" id="contact_subject" />
+                <input required placeholder="YOUR SUBJECT" type="text" name="subject" id="contact_subject" />
               </div>
 
             </div>
 
             <div className="contact__message">
-              <textarea placeholder="YOUR MESSAGE" name="message" id="contact_message"></textarea>
+              <textarea required placeholder="YOUR MESSAGE" name="message" id="contact_message"></textarea>
             </div>
             <div data-netlify-recaptcha="true">
             </div>
