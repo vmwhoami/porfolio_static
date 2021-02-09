@@ -1,5 +1,5 @@
 import React from 'react';
-import { Envelope, Phone } from '../components/Svgs'
+import { Envelope, Phone, Plane } from '../components/Svgs'
 import SocialLinks from '../components/SocialLinks'
 import Heading from '../components/Heading';
 
@@ -38,7 +38,7 @@ const Contact = () => {
         </div>
         {/* START OF THE RIGHT SIDE */}
         <div className="contact__right">
-          <form className="contact_form" accept-charset="UTF-8" data-remote="true" method="post">
+          <form className="contact_form" data-remote="true" method="post">
             <div className="contact__nes">
               <input placeholder="YOUR NAME" type="text" name="contact[name]" id="contact_name" />
 
@@ -49,6 +49,14 @@ const Contact = () => {
             <div className="contact__message">
               <textarea placeholder="YOUR MESSAGE" name="contact[message]" id="contact_message"></textarea>
             </div>
+            <button className="contact__button">
+
+              <span  >SEND MESSAGE</span>
+              <i className="social__icon">
+                <Plane />
+              </i>
+
+            </button>
           </form>
         </div>
 
