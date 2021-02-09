@@ -15,7 +15,7 @@
   display: flex;
   border-radius: 1rem 1rem 0 0;
   overflow: hidden;
-  cursor: pointer;
+  
   border-bottom: 1rem solid $main-color;
 }
 
@@ -41,6 +41,7 @@
 .link_container {
   display: inline-block;
   height: 16rem;
+  cursor: pointer;
 
   &:hover .img_fluid {
     transform: scale(1.2);

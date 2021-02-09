@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Heading from '../components/Heading';
-import { Github, Earth } from '../components/Svgs';
+import { Github, Earth, Back } from '../components/Svgs';
 import { NavLink } from 'react-router-dom';
 
 import axios from 'axios'
@@ -41,6 +41,7 @@ const PortfolioItem = () => {
             <NavLink className="links__container" to="/portfolio">
               <span className="links__text">back to portfolios</span>
               <i className="links__icon">
+                <Back />
               </i>
             </NavLink>
           </div>
