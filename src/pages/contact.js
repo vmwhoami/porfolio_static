@@ -56,9 +56,9 @@ const Contact = () => {
             <div className="contact__message">
               <textarea placeholder="YOUR MESSAGE" name="message" id="contact_message"></textarea>
             </div>
-            <div className="contact__input" data-netlify-recaptcha="true">
+            <div data-netlify-recaptcha="true">
             </div>
-            <button className="contact__button">
+            <button type="submit" className="contact__button">
               <span  >SEND MESSAGE</span>
               <i className="social__icon">
                 <Plane />
