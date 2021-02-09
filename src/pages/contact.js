@@ -1,4 +1,6 @@
 import React from 'react';
+import { Envelope, Phone } from '../components/Svgs'
+import SocialLinks from '../components/SocialLinks'
 import Heading from '../components/Heading';
 
 const Contact = () => {
@@ -8,75 +10,37 @@ const Contact = () => {
       />
 
       <div className="row contact__container">
-        <h3 className="text-uppercase contact__title mb-0 ft-wt-600 pb-3">Don't be shy !</h3>
+        <h3 className="text-uppercase contact__title ">Don't be shy !</h3>
+        <p className="mb-3">Get in touch I am open to discuss new projects and ideas. </p>
+
+        <div className="contact position-relative">
+          <i className="contact__icon">
+            <Envelope />
+          </i>
+          <div className="contact__details">
+            <p>mail me:</p>
+            <p>vmwhoami@gmail.com</p>
+          </div>
+        </div>
+
+
+        <div className="contact position-relative">
+          <i className="contact__icon">
+            <Phone />
+          </i>
+          <div className="contact__details">
+            <p>call me:</p>
+            <p> +373 69442476</p>
+          </div>
+        </div>
+        <SocialLinks />
       </div>
-    </div>
+    </div >
   );
 }
 
 export default Contact;
 
-
-// <div className="row contact__container">
-//       <!-- Left Side Starts -->
-//       <div className="col-12 col-lg-4 mb-5">
-//          <h3 className="text-uppercase contact__title mb-0 ft-wt-600 pb-3">Don't be shy !</h3>
-//          <p className="mb-3">Get in touch I am open to discuss new projects and ideas. </p>
-//          <div className="contact position-relative">
-//             <i className="contact__icon">
-//                <svg>
-//                   <use xlink:href="#icon-envelope"></use>
-//                </svg>
-//             </i>
-
-//             <div className="contact__details">
-//                <p>mail me:</p>
-//                <p>vmwhoami@gmail.com</p>
-//             </div>
-//          </div>
-
-//          <div className="contact position-relative">
-
-//             <i className="contact__icon">
-//                <svg>
-//                   <use xlink:href="#icon-phone"></use>
-//                </svg>
-//             </i>
-
-//             <div className="contact__details">
-//                <p>call me:</p>
-//                <p> +373 69442476</p>
-//             </div>
-
-//          </div>
-
-//          <div className="social">
-//   <a target="_blank" className="social__link" href="https://www.linkedin.com/in/vitaliemelnic/">
-
-//   <i className="social__icon">
-//     <svg className="social__svg">
-//       <use xlink:href="#icon-linkedin"></use>
-//     </svg>
-//   </i>
-// </a>
-
-//   <a target="_blank" className="social__link" href="https://github.com/vmwhoami">
-//   <i className="social__icon">
-//     <svg className="social__svg">
-//       <use xlink:href="#icon-github"></use>
-//     </svg>
-//   </i>
-// </a>
-//   <a target="_blank" className="social__link" href="https://twitter.com/vmwhoami">
-//   <i className="social__icon">
-//     <svg className="social__svg">
-//       <use xlink:href="#icon-twitter"></use>
-//     </svg>
-//   </i>
-// </a>
-// </div>
-//       </div>
-//       <!-- Left Side Ends -->
 
 
 
