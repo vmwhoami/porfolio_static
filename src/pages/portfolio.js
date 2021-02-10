@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import Heading from '../components/Heading';
 import { LoopCircleLoading } from 'react-loadingg';
+import Heading from '../components/Heading';
 
 const Portfolio = () => {
   const url = 'https://vmportapi.herokuapp.com/portfolio';
@@ -12,7 +12,7 @@ const Portfolio = () => {
   const getPortItems = async () => {
     const items = await axios.get(url);
     setPortimes(items.data);
-    setLoading(false)
+    setLoading(false);
   };
   useEffect(() => {
     getPortItems();

@@ -16,7 +16,7 @@ const PortfolioItem = () => {
   const getPortItems = async () => {
     const item = await axios.get(url);
     setPortItem(item.data);
-    setLoading(false)
+    setLoading(false);
   };
   useEffect(() => {
     getPortItems();
