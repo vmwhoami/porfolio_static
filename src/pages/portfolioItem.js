@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useParams } from 'react-router-dom';
-
+import { LoopCircleLoading } from 'react-loadingg';
 import axios from 'axios';
 
 import { Github, Earth, Back } from '../components/Svgs';
@@ -16,12 +16,13 @@ const PortfolioItem = () => {
   const getPortItems = async () => {
     const item = await axios.get(url);
     setPortItem(item.data);
+    setLoading(false)
   };
   useEffect(() => {
     getPortItems();
   }, []);
   const {
-    title, subtitle, body, main_image, thumb_image, github_link, live_link,
+    title, subtitle, body, main_image, github_link, live_link,
   } = portitem;
   return (
     <div className="container">
@@ -30,6 +31,7 @@ const PortfolioItem = () => {
         color={title}
         bg="Portfolio"
       />
+      {loading ? <LoopCircleLoading /> : null}
       <div className="portItemCont">
         <ImageOfItem thumb_image={main_image} />
         <div className="content">
