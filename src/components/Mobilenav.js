@@ -1,21 +1,23 @@
 import React, { useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, Portfolio, User, Envelope, Blog } from './Svgs';
+import {
+  Home, Portfolio, User, Envelope, Blog,
+} from './Svgs';
 
 const Navigation = () => {
-  let refContainer = useRef(null)
+  const refContainer = useRef(null);
 
-  let changeTogle = () => {
-    refContainer.current.checked = false
-  }
+  const changeTogle = () => {
+    refContainer.current.checked = false;
+  };
 
-  let Checkobox = () => <input type="checkbox" className="navigation__checkbox" ref={refContainer} id="nav_toggle" />
+  const Checkobox = () => <input type="checkbox" className="navigation__checkbox" ref={refContainer} id="nav_toggle" />;
   return (
     <div className="navigation">
       <Checkobox />
       {/* <input type="checkbox" className="navigation__checkbox" id="nav_toggle" /> */}
       <label className="navigation__button" htmlFor="nav_toggle">
-        <span className="navigation__burger"></span>
+        <span className="navigation__burger" />
       </label>
       <div className="navigation__background">&nbsp;</div>
       <nav className="navigation__nav">
@@ -38,7 +40,7 @@ const Navigation = () => {
               <span className="navigation__item__span">Portfolio</span>
             </NavLink>
           </li>
-          {/* 
+          {/*
 
           <li className="navigation__item">
             <NavLink className="navigation__itemlink" to="/about">
@@ -58,7 +60,7 @@ const Navigation = () => {
             </NavLink>
           </li>
 
-          {/* 
+          {/*
           <li className="navigation__item">
             <NavLink className="navigation__itemlink" to="/blog">
               <i className="navigation__icon">
@@ -68,12 +70,10 @@ const Navigation = () => {
             </NavLink>
           </li> */}
 
-
         </ul>
       </nav>
-    </div >
+    </div>
   );
-}
+};
 
 export default Navigation;
-

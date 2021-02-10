@@ -9,7 +9,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      favicon: "./src/assets/vmlogo.svg",
+      favicon: './src/assets/vmlogo.svg',
       template: './src/index.html',
     }),
   ],
@@ -35,11 +35,11 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    // contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 3000,
     historyApiFallback: true,
     contentBase: './',
-    hot: true
+    hot: true,
   },
 };

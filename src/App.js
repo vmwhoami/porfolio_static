@@ -10,10 +10,7 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Blog from './pages/blog';
 import Errorpage from './pages/errorpage';
-import PortfolioItem from './pages/portfolioItem'
-
-
-
+import PortfolioItem from './pages/portfolioItem';
 
 const App = () => (
   <BrowserRouter>
@@ -26,14 +23,16 @@ const App = () => (
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/blog" component={Blog} />
-        <Route path="/portfolio/:id" children={<PortfolioItem />} />
+        <Route path="/portfolio/:id">
+          {' '}
+          <PortfolioItem />
+        </Route>
         <Route path="*" component={Errorpage} />
       </Switch>
     </div>
-  </BrowserRouter >
+  </BrowserRouter>
 
 );
-
 
 // https://www.golangprograms.com/how-to-create-simple-react-router-to-navigate-multiple-pages.html
 export default App;
