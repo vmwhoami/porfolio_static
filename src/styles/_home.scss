@@ -42,7 +42,6 @@
     border: 6px solid $grey-color;
   }
 
-
   &__img {
     object-fit: cover;
     width: 100%;
@@ -85,7 +84,6 @@
     text-transform: uppercase;
   }
 
-
   &__heading {
     font-size: 4.5rem;
     text-transform: uppercase;
@@ -110,15 +108,11 @@
   }
 }
 
-
-
-
 svg {
   fill: $white-color;
   width: 2rem;
   height: 2rem;
 }
-
 
 .card {
   background-color: $grey-color !important;
@@ -127,7 +121,6 @@ svg {
 .rounded-corners {
   border-radius: 3rem;
 }
-
 
 .social__container {
   display: flex;

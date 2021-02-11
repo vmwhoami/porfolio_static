@@ -37,8 +37,6 @@
     background-image: radial-gradient($black-color, $grey-color);
     z-index: 100;
     transition: all 0.8s cubic-bezier(0.97, -0.25, 0.13, 1.31);
-
-   
   }
 
   &__nav {
@@ -57,7 +55,6 @@
 
   &__list {
     list-style: none;
-  
   }
 
   &__item {
@@ -104,7 +101,6 @@
   &__checkbox:checked ~ &__background {
     transform: scale(100);
   }
-
 
   &__checkbox:checked ~ &__nav {
     opacity: 1;

@@ -2,9 +2,10 @@
 
 /* Form */
 
-.contact_form{
+.contact_form {
   width: 100%;
 }
+
 .contact_form input[type=text],
 .contact_form input[type=email] {
   border: 1px solid $black-color;
@@ -12,20 +13,21 @@
   background: $grey-color;
   color: #fff;
   padding: 2rem 2.5rem;
- 
   border-radius: 2rem;
   outline: none !important;
   transition: 0.3s;
 }
-.text-uppercase{
+
+.text-uppercase {
   text-transform: uppercase;
 }
+
 .contact_form textarea {
   border: 1px solid $black-color;
   background: $grey-color;
   color: $white-color;
   width: 100%;
- padding: 2rem;
+  padding: 2rem;
   margin-bottom: 2rem;
   height: 20rem;
   overflow: hidden;
@@ -67,44 +69,44 @@
 
 .contact {
   max-width: 80vw;
-  margin:  5rem auto;
+  margin: 5rem auto;
   display: flex;
 
   @media screen and (max-width: $bp-md) {
     flex-direction: column;
   }
 
-
- &__left{
-padding-right: 2rem;
- }
-&__right{
-  flex:1 1 60rem
-}
-
-&__nes{
- width: 100%;
-  display: flex;
-  justify-content: space-between;
-
-  @media screen and (max-width: $bp-md) {
-    flex-direction: column;
-    justify-content: flex-start;
+  &__left {
+    padding-right: 2rem;
   }
 
-}
-&__input{
-  flex: 0 1 22rem;
-  
-  @media screen and (max-width: $bp-md) {
-    flex: 1 1 7rem ;
-  
+  &__right {
+    flex: 1 1 60rem;
   }
-}
 
-&__message{
-  width: 100%;
-}
+  &__nes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $bp-md) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  &__input {
+    flex: 0 1 22rem;
+
+    @media screen and (max-width: $bp-md) {
+      flex: 1 1 7rem;
+    }
+  }
+
+  &__message {
+    width: 100%;
+  }
+
   &__container {
     margin-top: 8rem;
   }
@@ -115,12 +117,11 @@ padding-right: 2rem;
     margin-bottom: 1rem;
   }
 
-  &__info{
+  &__info {
     display: flex;
     align-items: center;
-    margin: 2rem 0 ;
+    margin: 2rem 0;
   }
-
 
   &__icon {
     svg {
@@ -132,7 +133,6 @@ padding-right: 2rem;
 
   &__details {
     margin-left: 1rem;
-
 
     & p:first-child {
       margin: 0;
@@ -191,7 +191,6 @@ padding-right: 2rem;
     &:hover i svg {
       display: block;
     }
-
 
     &:hover span {
       transform: translate(-70%, -50%);
