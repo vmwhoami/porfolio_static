@@ -8,7 +8,7 @@ const Home = () => (
   <main className="main">
     <div className="main__container">
       <div className="image">
-        <img className="image__img" src={image} />
+        <img className="image__img" src={image} alt="" />
       </div>
 
       <div className="about">

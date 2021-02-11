@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Heading = ({ white, color, bg }) => (
   <div className="header my-5">
@@ -11,4 +12,15 @@ const Heading = ({ white, color, bg }) => (
   </div>
 );
 
+Heading.propTypes = {
+  white: PropTypes.string,
+  color: PropTypes.string,
+  bg: PropTypes.string,
+
+};
+Heading.defaultProps = {
+  white: '',
+  color: '',
+  bg: '',
+};
 export default Heading;
