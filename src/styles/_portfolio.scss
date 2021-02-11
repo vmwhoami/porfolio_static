@@ -36,6 +36,15 @@
   border-radius: 0 0 1rem 1rem;
 }
 
+.img_fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1rem 1rem 0 0;
+  transition: all 0.3s cubic-bezier(0.76, 0.74, 0.72, 0.8);
+}
+
 .link_container {
   display: inline-block;
   height: 16rem;
@@ -45,15 +54,6 @@
     transform: scale(1.2);
     border-radius: 1rem 1rem 0 0;
   }
-}
-
-.img_fluid {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 1rem 1rem 0 0;
-  transition: all 0.3s cubic-bezier(0.76, 0.74, 0.72, 0.8);
 }
 
 .new_item {
